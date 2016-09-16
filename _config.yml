@@ -3,7 +3,7 @@
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `hexo-site/source/` directory.
-favicon: /assets/images/kaede-avatar-k-50.png
+favicon: /assets/images/favicon-03-padding.png
 
 # Set default keywords (Use a comma to separate)
 keywords: "Hexo, GitHub, Kaede, Android, Java, 日语, 日本语, 画画, ACG, 二次元, 摄影"
@@ -148,7 +148,7 @@ social_icons:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-avatar: http://kaedea.com/assets/images/avatar_01.png
+avatar: /assets/images/avatar-anzu.jpg
 
 
 # Table Of Contents in the Sidebar
