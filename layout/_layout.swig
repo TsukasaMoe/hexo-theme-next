@@ -5,13 +5,15 @@
   {% set html_class = html_class + ' use-motion' %}
 {% endif %}
 
-<html class="{{ html_class | lower }}" lang="{{ config.language }}">
+<html class="{{ html_class | lower }}">
 <head>
   {% include '_partials/head.swig' %}
   <title>{% block title %}{% endblock %}</title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
+<script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="{{ config.language }}">
 
   {% include '_scripts/third-party/analytics.swig' %}
 
@@ -23,9 +25,21 @@
   <div class="{{ container_class }} {% block page_class %}{% endblock %} ">
     <div class="headband"></div>
 
+    {% if theme.scheme === 'Muse' %}
+    <script type="text/javascript">
+        $('.headband').animate({'width':'10%'}, 150);
+    </script>
+    {% endif %}
+
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"> {%- include '_partials/header.swig' %} </div>
     </header>
+
+    {% if theme.scheme === 'Muse' %}
+    <script type="text/javascript">
+        $('.headband').animate({'width':'30%'}, 150);
+    </script>
+    {% endif %}
 
     <main id="main" class="main">
       <div class="main-inner">
@@ -42,6 +56,12 @@
       </div>
     </main>
 
+    {% if theme.scheme === 'Muse' %}
+    <script type="text/javascript">
+        $('.headband').animate({'width':'60%'}, 150);
+    </script>
+    {% endif %}
+
     <footer id="footer" class="footer">
       <div class="footer-inner">
         {% include '_partials/footer.swig' %}
@@ -49,6 +69,12 @@
         {% block footer %}{% endblock %}
       </div>
     </footer>
+
+    {% if theme.scheme === 'Muse' %}
+    <script type="text/javascript">
+        $('.headband').animate({'width':'80%'}, 150);
+    </script>
+    {% endif %}
 
     <div class="back-to-top">
       <i class="fa fa-arrow-up"></i>
@@ -71,7 +97,12 @@
   {% include '_scripts/third-party/mathjax.swig' %}
   {% include '_scripts/third-party/lean-analytics.swig' %}
   {% include '_scripts/baidu-push.swig' %}
-  {% include '_components/algolia-search/assets.swig' %}
+
+  {% if theme.scheme === 'Muse' %}
+  <script type="text/javascript">
+      $('.headband').animate({'width':'100%'}, 150);
+  </script>
+  {% endif %}
 
 </body>
 </html>
