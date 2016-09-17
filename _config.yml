@@ -193,7 +193,7 @@ links:
   老罗的Android之旅: http://blog.csdn.net/luoshengyang/article/
   OneV's Den: https://onevcat.com/
   GPBeta: http://www.gpbeta.com/
-  友情链接: http://kaedea.com/link/
+  友情链接: /link/
 
 
 # ---------------------------------------------------------------
@@ -262,15 +262,15 @@ swiftype_key: oCoTxxFvwzZyiv48ioJ5
 # Baidu Share
 # Available value:
 #    button | slide
-#baidushare:
+# baidushare:
 ##  type: button
 
 # Share
-#jiathis:
-#add_this_id:
+# jiathis:
+# add_this_id: 1850331
 
 # Share
-#duoshuo_share: true
+# duoshuo_share: true
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
@@ -289,9 +289,9 @@ swiftype_key: oCoTxxFvwzZyiv48ioJ5
 # you can visit http://dev.duoshuo.com get duoshuo user id.
 duoshuo_info:
   ua_enable: true
-  admin_enable: false
-  user_id: 0
-  #admin_nickname: Author
+  admin_enable: true
+  user_id: 3750863
+  admin_nickname: (Author)
 
 
 # Facebook SDK Support.
