@@ -102,7 +102,7 @@
             <ul class="links-of-blogroll-list">
               {% for name, link in theme.links %}
                 <li class="links-of-blogroll-item">
-                  <a href="{{ link }}" title="{{ name }}" {% if link.indexOf(config.url) === -1 %}target="_blank"{% endif %}>{{ name }}</a>
+                  <a href="{{ link }}" title="{{ name }}" {% if link.indexOf('http:') !== -1 || link.indexOf('https:') !== -1 %}target="_blank"{% endif %}>{{ name }}</a>
                 </li>
               {% endfor %}
             </ul>
