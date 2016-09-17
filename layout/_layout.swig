@@ -104,5 +104,9 @@
   </script>
   {% endif %}
 
+  <!-- pangu auto space -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/3.2.1/pangu.min.js"></script>
+  <script> pangu.spacingPage(); </script>
+
 </body>
 </html>
