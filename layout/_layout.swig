@@ -11,6 +11,7 @@
   <title>{% block title %}{% endblock %}</title>
 </head>
 
+<!-- move jquery here for loading (originally placed in "_scripts/vendors.swig") -->
 <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ config.language }}">
@@ -25,6 +26,7 @@
   <div class="{{ container_class }} {% block page_class %}{% endblock %} ">
     <div class="headband"></div>
 
+    <!-- update loading -->
     {% if theme.scheme === 'Muse' %}
     <script type="text/javascript">
         $('.headband').animate({'width':'10%'}, 150);
@@ -35,6 +37,7 @@
       <div class="header-inner"> {%- include '_partials/header.swig' %} </div>
     </header>
 
+    <!-- update loading -->
     {% if theme.scheme === 'Muse' %}
     <script type="text/javascript">
         $('.headband').animate({'width':'30%'}, 150);
@@ -56,6 +59,7 @@
       </div>
     </main>
 
+    <!-- update loading -->
     {% if theme.scheme === 'Muse' %}
     <script type="text/javascript">
         $('.headband').animate({'width':'60%'}, 150);
@@ -70,6 +74,7 @@
       </div>
     </footer>
 
+    <!-- update loading -->
     {% if theme.scheme === 'Muse' %}
     <script type="text/javascript">
         $('.headband').animate({'width':'80%'}, 150);
@@ -98,6 +103,7 @@
   {% include '_scripts/third-party/lean-analytics.swig' %}
   {% include '_scripts/baidu-push.swig' %}
 
+  <!-- update loading -->
   {% if theme.scheme === 'Muse' %}
   <script type="text/javascript">
       $('.headband').animate({'width':'100%'}, 150);
