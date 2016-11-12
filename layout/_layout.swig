@@ -12,7 +12,7 @@
 </head>
 
 <!-- move jquery here for loading (originally placed in "_scripts/vendors.swig") -->
-<script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+<script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ config.language }}">
 
